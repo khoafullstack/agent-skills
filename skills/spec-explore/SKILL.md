@@ -1,6 +1,6 @@
 ---
 name: spec-explore
-description: Take a feature request to a finished spec and technical design: clarify requirements with the user, map them onto the codebase, weigh options by their impact, and design the chosen one. Use when a new feature or requirement arrives, a requirement changes, or the user asks to explore, assess, specify, or design a change.
+description: "Take a feature request to a finished spec and technical design: clarify requirements with the user, map them onto the codebase, weigh options by their impact, and design the chosen one. Use when a new feature or requirement arrives, a requirement changes, or the user asks to explore, assess, specify, or design a change."
 ---
 
 # spec-explore
@@ -9,9 +9,9 @@ Turn a raw feature request into two fixed-format documents: a **spec** (what to 
 
 ## Outputs
 
-| File | Template | When |
-|---|---|---|
-| `docs/specs/<feature-slug>/spec.md` | [`templates/spec.md`](templates/spec.md) | Always. |
+| File                                  | Template                                     | When    |
+| ------------------------------------- | -------------------------------------------- | ------- |
+| `docs/specs/<feature-slug>/spec.md`   | [`templates/spec.md`](templates/spec.md)     | Always. |
 | `docs/specs/<feature-slug>/design.md` | [`templates/design.md`](templates/design.md) | Always. |
 
 `<feature-slug>` is a short kebab-case name for the feature (`export-invoices-csv`). On a re-run or a requirement change, refresh the existing files in place.
@@ -36,7 +36,7 @@ Done when: you know which project and child projects the feature touches.
 
 ### 2. Restate the request
 
-Write the goal, scope (in and out), and requirements numbered R1, R2, ... Look for gaps of three kinds: *ambiguous* (more than one reading), *missing* (data, permissions, errors, edge states, limits), *conflicting* (with another requirement). Ask about each.
+Write the goal, scope (in and out), and requirements numbered R1, R2, ... Look for gaps of three kinds: _ambiguous_ (more than one reading), _missing_ (data, permissions, errors, edge states, limits), _conflicting_ (with another requirement). Ask about each.
 
 Done when: every requirement traces to the user's words or to a Decisions row.
 
